@@ -5,11 +5,6 @@
     padding:0;
     box-sizing: border-box;
 }
-header::after, .contents::after, footer::after {
-    content:'';
-    clear:both;
-    display: block;
-}
 
 /* 공통 */
 #wrap {
@@ -17,7 +12,7 @@ header::after, .contents::after, footer::after {
     width: 1200px;
     margin: 0 auto;
 }
-.logo, nav, #contents div, footer div {
+header, #contents, footer {
     /* float: left; */
     display:flex;
 }
