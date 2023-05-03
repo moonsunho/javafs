@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+body div{
+    border: 1px solid black;
+}
 /* 공통 */
 #wrap {
     /* 가로 가운데 맞춤 */
