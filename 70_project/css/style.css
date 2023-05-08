@@ -23,11 +23,11 @@ a {
     color: #333;
     text-decoration: none;
 }
-/* 
+
 img {
     width: 100%;
     vertical-align: top;
-} */
+}
 li{
     list-style: none;
 }
@@ -92,13 +92,6 @@ header i{
 
 /* section2 */
 /* section3 */
-#portfolio{
-    background: url(../images/parallax2.jpg) no-repeat 50% 50%/cover fixed;
-    height: 430px;
-}
+
 /* section4 */
-#contact{
-    background: url(../images/parallax3.jpg) no-repeat 50% 50%/cover fixed;
-    height: 930px;
-}
 /* footer */
