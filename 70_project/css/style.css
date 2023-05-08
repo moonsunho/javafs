@@ -2,73 +2,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
 
 /* reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 10px;
 }
-body{
-    font: 1.5rem 'Noto Sans KR', sans-serif;;
+
+body {
+    font: 1.5rem/1.8 'Noto Sans KR', sans-serif;
+    ;
     color: #333;
 }
+
 /* a태그 글자 색은 body태그의 글자색을 상속받지 않는다. */
-a{
+a {
     color: #333;
+    text-decoration: none;
 }
-img{width: 100%;}
+/* 
+img {
+    width: 100%;
+    vertical-align: top;
+} */
+li{
+    list-style: none;
+}
+
+/* section{
+    width: 980px;
+    margin: 0 auto;
+} */
 
 /* header */
-header{
+header {
     position: fixed;
     width: 100%;
-    background: #eee;
     z-index: 9999;
 }
-header ul{
+
+header ul {
     height: 54px;
-    padding: 0 32px;
-    
+    padding: 0 16px;
+
     display: flex;
     align-items: center;
 }
-header li{
-    margin: 0 8px;
-}
-header a{
+
+
+header a {
     padding: 4px 16px;
 }
-header a:hover{
+
+header a:hover {
     background: #ccc;
 }
 
-
-section{
-    width: 980px;
-    margin: 0 auto;
+header i{
+    margin-right: 8px;
 }
+
+
 
 
 
 /* section1 */
-#home{
+#home {
     position: relative;
+    background: url(../images/parallax1.jpg) no-repeat 50% 50%/cover fixed;
+    height: 930px;
 }
+
 /* 요소를 부모 정가운데 배치 */
-.logo{
+.logo {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background: #000;
     padding: 8px 32px;
 }
-.logo a{
+
+.logo a {
     color: #fff;
 }
+
 /* section2 */
 /* section3 */
+#portfolio{
+    background: url(../images/parallax2.jpg) no-repeat 50% 50%/cover fixed;
+    height: 430px;
+}
 /* section4 */
+#contact{
+    background: url(../images/parallax3.jpg) no-repeat 50% 50%/cover fixed;
+    height: 930px;
+}
 /* footer */
