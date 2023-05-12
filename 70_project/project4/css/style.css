@@ -1,23 +1,23 @@
 @charset "utf-8";
+
 /* 초기화 */
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body div{
-    border: 1px solid black;
-}
 /* 공통 */
 #wrap {
     /* 가로 가운데 맞춤 */
     width: 1200px;
     margin: 0 auto;
 }
-header, #contents, footer {
-    /* float: left; */
-    display:flex;
+
+header,
+#contents,
+footer {
+    display: flex;
 }
 
 /* 헤더 */
@@ -27,6 +27,7 @@ header, #contents, footer {
     height: 100px;
     background: lightpink;
 }
+
 /* 내비게이션 */
 nav {
     width: 1000px;
@@ -38,6 +39,30 @@ nav {
 #slide {
     height: 300px;
     background: lightcoral;
+    overflow: hidden;
+}
+
+#slide ul {
+    position: relative;
+    left: 0;
+    display: flex;
+    width: 400%;
+    animation: slide 9s infinite;
+}
+
+@keyframes slide{
+    0% {left: 0;}
+    5%{left: -100%;}
+    33%{left: -100%;}
+    38%{left: -200%;}
+    66%{left: -200%;}
+    71%{left: -300%;}
+    99.99%{left: -300%;}
+    100% {left: 0;}
+}
+
+#slide img {
+    height: 300px;
 }
 
 /* 메인 콘텐츠 */
@@ -45,12 +70,15 @@ nav {
     width: 400px;
     height: 200px;
 }
+
 .tabs {
     background: gold;
 }
+
 .banner {
     background: lavender;
 }
+
 .shortcut {
     background: greenyellow;
 }
@@ -61,11 +89,13 @@ nav {
     height: 100px;
     background: firebrick;
 }
+
 .addr {
     width: 800px;
     height: 100px;
     background: blueviolet;
 }
+
 .sns {
     width: 200px;
     height: 100px;
