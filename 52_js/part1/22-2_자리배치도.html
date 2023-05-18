@@ -18,17 +18,25 @@
                 코드2;
             }
         */
-
+        // 학생 수와 한 줄에 앉는 인원수를 입력받아서 총 몇줄이 필요한지 구하시오
         // 입력
-
+        var stu_num;
+        var count;
+        var total_line;
 
         // 처리
-
-
+        stu_num = prompt('학생 수');
+        count = prompt('한 줄에 앉는 인원 수');
+        total_line = stu_num / count;
         // 출력
+        if (stu_num % count === 0) {
+            total_line = parseInt(stu_num / count);
+        }
+        else { total_line = parseInt(stu_num / count) + 1; }
 
-
+        document.write(total_line);
     </script>
+
 </body>
 
 </html>

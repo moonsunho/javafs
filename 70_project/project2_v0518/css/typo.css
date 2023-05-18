@@ -9,34 +9,72 @@ html {
 }
 
 body {
-    font-family: 'NanumSquareRound';
+    font: 1.5rem/1.8 'NanumSquareRound', 'Noto Sans KR', sans-serif;;
+    color: #333;
+}
+
+
+.logo {
     font-size: 1.5rem;
-    line-height: 1.8;
-    color: #333;
+    font-weight: normal;
+    letter-spacing: 4px;
 }
 
-a {
-    color: #333;
-    text-decoration: none;
+h2, h3{
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+
 }
 
-h1 {
-    font-size: 3.2rem;
-}
 
 h2 {
     font-size: 2.4rem;
-}
-
-#main_img h2 {
-    font-size: 4.8rem;
 }
 
 h3 {
     font-size: 1.8rem;
 }
 
+a {
+    color: #555;
+    text-decoration: none;
+}
+
+button{
+    color: #fff;
+}
+
+::placeholder{
+    color: #ccc;
+}
+
 nav li {
     font-size: 1.6rem;
     font-weight: bold;
+}
+
+.main_tit {
+    font-size: 3.6rem;
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* section 2 */
+#menu h3{
+    color: #fff;
+}
+
+/* section 3 */
+#event h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+#event li p:first-of-type{
+    color: #999;
+}
+
+/* footer */
+footer{
+    color: #fff;
 }
