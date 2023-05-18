@@ -1,0 +1,42 @@
+@charset "utf-8";
+@font-face {
+    font-family: NanumSquareRound;
+    src: url(../font/NanumSquareRoundR.ttf);
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'NanumSquareRound';
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+#main_img h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+nav li {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
