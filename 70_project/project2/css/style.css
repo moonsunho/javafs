@@ -113,7 +113,7 @@ section {
     margin: 8px 0;
 }
 
-#event li a {
+#event a {
     display: block;
     background: #ccc;
     text-align: center;
@@ -121,12 +121,16 @@ section {
     margin-top: 16px;
 }
 
+#event a:hover{
+    background: #f5741d;
+}
+
+
 /* section4 */
 #news input {
     display: block;
     width: 100%;
     padding: 10px 16px;
-    margin-bottom: 0px;
     border: 1px solid #ccc;
 }
 
