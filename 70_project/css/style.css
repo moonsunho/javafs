@@ -23,7 +23,7 @@ header a {
 
 header a:hover {
     background: #ccc;
-    
+
 }
 
 header i {
@@ -74,11 +74,11 @@ section h2+p {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 /* section2 */
-.profile{
+.profile {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -89,17 +89,17 @@ section h2+p {
     word-break: break-all;
 }
 
-.profile p:first-of-type{
+.profile p:first-of-type {
     flex: 100%;
     margin-bottom: 54px;
 }
 
-.profile div{
-    flex:0 0 48%;
+.profile div {
+    flex: 0 0 48%;
     text-align: center;
 }
 
-.profile p:last-of-type{
+.profile p:last-of-type {
     flex: 0 0 48%;
 }
 
@@ -107,11 +107,11 @@ section h2+p {
     width: 425px;
 }
 
-.photo img{
+.photo img {
     margin-top: 54px;
 }
 
-.photo b{
+.photo b {
     margin-left: 8px;
 }
 
@@ -120,6 +120,7 @@ section h2+p {
     margin: 54px 0;
     text-align: center;
 }
+
 /* section2 - progress */
 .progress .lst>span {
     display: inline-block;
@@ -171,7 +172,7 @@ section h2+p {
 #portfolio ul {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
+    justify-content: space-between;
 }
 
 /* 
@@ -183,12 +184,69 @@ section h2+p {
 #portfolio li {
     width: 231px;
     height: 162px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+#portfolio .moreBtn {
+    margin-top: 64px;
+    text-align: center;
+}
+
+#portfolio .moreBtn a {
+    background: #f1f1f1;
+    padding: 8px 16px;
 }
 
 /* section4 */
 #contact .parallax {
     height: 410px;
     background-image: url(../images/parallax3.jpg);
+}
+
+#contact .container {
+    display: flex;
+}
+
+#map {
+    flex: 0 0 330px;
+    height: 160px;
+    margin-right: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#contact address i{
+    margin-right: 20px;
+}
+
+#contact address + p{
+    margin: 16px 0;
+}
+#contact form{
+    text-align: right;
+}
+
+#contact [name] {
+    width: 292px;
+    height: 44px;
+    padding-left: 8px;
+}
+[name="user_name"]{
+    margin-right: 11px;
+}
+
+
+#contact [name="user_message"] {
+    width: 600px;
+    margin: 16px 0;
+}
+
+#contact button{
+    width: 160px;
+    height: 44px;
+    color: #fff;
+    background: #000;
 }
 
 /* footer */

@@ -23,6 +23,8 @@
                 break;
                 default: 코드4;
             }
+
+            break는 제어문(선택문, 반복문)을 탈출
         */
 
         var site = prompt('네이버, 다음, 네이트, 구글 중 즐겨 사용하는 포털 검색 사이트는?', '');
@@ -39,9 +41,14 @@
             break;
             default: alert('보기 중에 없는 사이트입니다.');
         }
+        /* 
+            객체.매서드();
+            객체.속성 = 값;
+            location.reload() -브라우저 새로고침
+            location.href = 'url' - 현재 위치에서 url에 저장된 주소로 이동된다.
+        */
 
-        // window.location.href = 'url'
-        // 현재 위치에서 url에 저장된 주소로 이동된다.
+        // if문의 실행코드가 한 문장일 경우 중괄호 생략 가능
         if (url) location.href = 'https://' + url;
     </script>
 </body>

@@ -39,7 +39,7 @@ nav {
 
 /* section 2~4 common */
 .section {
-    padding: 81px 30px;
+    padding: 81px 30px 0;
 }
 
 .section h2 {
@@ -107,10 +107,15 @@ nav {
     margin: 20px 0 45px;
 }
 
+#news .map {
+    height: 185px;
+}
+
 /* footer */
 footer {
     background: #000;
     text-align: center;
+    margin-top: 8px;
     padding: 30px 0;
 }
 
@@ -119,12 +124,8 @@ footer span:nth-of-type(1) {
 }
 
 
-
-
-
-
-/* 데스크탑 992px이상 */
-@media (min-width: 992px) {
+/* 태블릿 600이상 */
+@media (min-width : 600px) {
 
     /* header */
     header {
@@ -132,7 +133,6 @@ footer span:nth-of-type(1) {
         justify-content: space-between;
     }
 
-    /* navigation */
     nav {
         display: block;
     }
@@ -140,44 +140,87 @@ footer span:nth-of-type(1) {
     nav ul {
         display: flex;
     }
-    nav ul li:not(:first-of-type){
+
+    nav ul li:not(:first-of-type) {
         margin-left: 36px;
     }
 
-    /* section1 */
-    
-    #main_img{
-        max-width: 1496px;
-        margin: 0 auto;
+    /* main title */
+    #main_img .main_tit {
+        white-space: nowrap;
     }
-    /* section2~4 common */
-    .section{
-        width: 1496px;
-        margin: 0 auto;
-        padding: 81px 0 0;
+
+    #main_img span {
+        display: inline-block;
+        margin-left: 16px;
     }
+
+    /* section 2~4 common */
     .section ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    .section li{
-        width: 362px;
+    .section li {
+        flex: 0 0 calc(50% - 8px);
     }
-    /* section2 */
-    /* section3 */
+
+    /* section 3 */
     #event li {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    #event li div{
-        height: 300px;
+
+    /* section 4 */
+    #news .map {
+        height: 400px;
     }
+
+
+}
+
+
+
+/* 데스크탑 992px이상 */
+@media (min-width: 992px) {
+
+    /* section1 */
+    #main_img {
+        max-width: 1496px;
+        margin: 0 auto;
+    }
+
+
+    /* section2~4 common */
+    .section {
+        max-width: 1496px;
+        margin: 0 auto;
+        padding: 81px 30px 0;
+    }
+
+    .section li {
+        flex: 0 0 calc(25% - 8px);
+    }
+
     /* section4 */
-    .map{
-        height: 830px;
+    #news .map {
+        height: 845px;
     }
+
     /* footer */
+    footer span:nth-of-type(1) {
+        display: inline-block;
+    }
+
+    footer span:nth-of-type(2) {
+        display: none;
+    }
+}
+
+@media (min-width: 1573px) {
+    .section {
+        padding: 81px 0 0;
+    }
 }
