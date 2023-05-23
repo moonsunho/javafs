@@ -13,8 +13,9 @@
     <div id="galleryZone">
         <p>
             <!-- 인라인 스크립트 -->
-            <button onclick="gallery(0)">이전</button>
-            <button onclick="gallery(1)">다음</button>
+            <button onclick="gallery(1)">1</button>
+            <button onclick="gallery(2)">2</button>
+            <button onclick="gallery(3)">3</button>
         </p>
         <p><img src="../assets/pic_1.jpg" alt="" id="photo"></p>
     </div>
@@ -51,49 +52,16 @@
             함수 호출
                 var 변수 = 함수명();
         */
-        // const imgTag = document.getElementById('photo');
-        // let num = 1;
 
-        // function gallery(direct) {
-        //     if (direct) {
-        //         if (num == 8) return;
-        //         num++;
-        //     } else {
-        //         if (num == 1) return;
-        //         num--
-        //     }
-        //     imgTag.setAttribute('src', '../assets/pic_' + num + '.jpg');
-        // }
         const imgTag = document.getElementById('photo');
             let num = 1
 
-            function gallery(direct){
-                if (direct){
-                    if(num===10) return;
-                    num++;
-                } else{
-                    if(num===1) return;
-                    num--;
-                }
+            function gallery(num){
                 imgTag.setAttribute('src','../assets/pic_'+num+'.jpg');
-                // document.write(num);
+        
             }
 
 
-        // num은 전역 변수
-        // let num = 1;
-        // function gallery(direct) {
-        //     if (direct) {
-        //         if (num == 8) return;
-        //         num++;
-        //     } else {
-        //         if (num == 1) return;
-        //         num--;
-        //     }
-
-        //     var imgTag = document.getElementById('photo');
-        //     imgTag.setAttribute('src', '../assets/pic_' + num + '.jpg');
-        // }
     </script>
 </body>
 

@@ -51,49 +51,22 @@
             함수 호출
                 var 변수 = 함수명();
         */
-        // const imgTag = document.getElementById('photo');
-        // let num = 1;
-
-        // function gallery(direct) {
-        //     if (direct) {
-        //         if (num == 8) return;
-        //         num++;
-        //     } else {
-        //         if (num == 1) return;
-        //         num--
-        //     }
-        //     imgTag.setAttribute('src', '../assets/pic_' + num + '.jpg');
-        // }
+ 
         const imgTag = document.getElementById('photo');
             let num = 1
 
             function gallery(direct){
                 if (direct){
-                    if(num===10) return;
+                    if(num===10) num=0;
                     num++;
                 } else{
-                    if(num===1) return;
+                    if(num===1) num=11;
                     num--;
                 }
                 imgTag.setAttribute('src','../assets/pic_'+num+'.jpg');
-                // document.write(num);
+                
             }
 
-
-        // num은 전역 변수
-        // let num = 1;
-        // function gallery(direct) {
-        //     if (direct) {
-        //         if (num == 8) return;
-        //         num++;
-        //     } else {
-        //         if (num == 1) return;
-        //         num--;
-        //     }
-
-        //     var imgTag = document.getElementById('photo');
-        //     imgTag.setAttribute('src', '../assets/pic_' + num + '.jpg');
-        // }
     </script>
 </body>
 

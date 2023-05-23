@@ -40,6 +40,23 @@
             setTime()
         */
 
+        let d = new Date();
+        console.log(d);
+        //  년(yyyy)
+        document.write(d.getUTCFullYear(),'<br>');
+        //  월(mm) : 0(1월) ~ 11(12월)
+        document.write(d.getUTCMonth(),'<br>');
+        //  일(dd)
+        document.write(d.getUTCDate(),'<br>');
+        //  요일(week)
+        document.write(d.getUTCDay(),'<br>');
+        //  시
+        document.write(d.getHours(),'<br>');
+        document.write(d.getMinutes(),'<br>');
+        document.write(d.getSeconds(),'<br>');
+
+        var d2 = new Date(2020,0,20);
+        console.log(d2);
 
         
     </script>

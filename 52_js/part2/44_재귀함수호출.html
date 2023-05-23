@@ -24,9 +24,22 @@
                 함수명();
         */
 
+        /* 
+            변수 : i
+            제어문 : for
+            매서드: write()
+        */
         // 1부터 10까지 출력
+        let i = 0
 
-
+        function ten(a) {
+            a++
+            if (a >= 11) return; 
+                document.write(a,'<br>')
+                ten(a)
+            
+        }
+        ten(i)
     </script>
 </body>
 

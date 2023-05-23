@@ -24,7 +24,7 @@
 
             변수(variables)
              - 1개의 데이터를 저장
-             - var, let, const 키워드를 이용하여 선언
+             - var(재선언, 재할당), let(재할당), const 키워드를 이용하여 선언
              - 문자형, 숫자형, 논리형 데이터 보관
 
             // 변수 선언 및 할당
@@ -38,6 +38,7 @@
             함수();
 
             함수(function)
+             - 코드의 재사용
              - 코드를 저장하고 데이터를 반환
              - function 키워드를 이용하여 선언
              - 함수 끝은 문장 끝 ; 생략
@@ -66,16 +67,28 @@
 
         // 1부터 10까지 출력하는 함수 생성
         // 함수(매개변수1, 매개변수...){코드;}
+        
+        
+
+        hap()
+        hap2();
+        
         function hap() {
             let sum = 0;
-            for (let i = 1; i <= 10; i++) {
+            for (let i = 1; i <= 100; i++) {
                 sum += i;
             }
             document.write(sum, '<br>');
         };
 
-        hap();
-        
+        // 익명함수
+        let hap2 = function () {
+            let sum = 0;
+            for (let i = 1; i <= 100; i++) {
+                sum += i;
+            }
+            document.write(sum, '<br>');
+        };
 
 
     </script>
