@@ -19,6 +19,12 @@
 
         // 전화번호 뒤 4자리 '*'표시 하기
 
+        var userName = prompt('영문 이름은?','');
+        document.write(userName.toUpperCase(),'<br>');
+
+        var userNumber = prompt('전화번호','');
+        document.write(userNumber.substring(0,userNumber.length-4)+'****');
+
 
     </script>
 </body>
