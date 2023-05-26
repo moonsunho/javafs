@@ -132,8 +132,8 @@
         .slide ul {
             position: relative;
             left: 0;top: 0;
-        
-            height: 400%;
+            display: flex;
+            width: 400%;
             animation: slide 9s infinite;
         }
 
@@ -160,14 +160,14 @@
 
         /* animation keyframe */
         @keyframes slide {
-            0% {top: 0;}
-            5% {top: -100%;}
-            33% {top: -100%;}
-            38% {top: -200%;}
-            66% {top: -200%;}
-            71%{top: -300%;}
-            99.99%{top: -300%;}
-            100% {top: 0;}
+            0% {left: 0;}
+            5% {left: -100%;}
+            33% {left: -100%;}
+            38% {left: -200%;}
+            66% {left: -200%;}
+            71%{left: -300%;}
+            99.99%{left: -300%;}
+            100% {left: 0;}
         }
 
          /* 푸터 */
