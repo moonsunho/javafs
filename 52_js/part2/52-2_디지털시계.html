@@ -20,6 +20,76 @@
         <span class="ss">초</span>
     </div>
     <script>
+    let d = new Date();
+        console.log(d);
+        //  년(yyyy)
+        document.write(d.getUTCFullYear(), '<br>');
+        //  월(mm) : 0(1월) ~ 11(12월)
+        document.write(d.getUTCMonth(), '<br>');
+        //  일(dd)
+        document.write(d.getUTCDate(), '<br>');
+        //  요일(week)
+        let week = d.getDay();
+
+        if (week === 0) {
+            week ="일";
+        }
+        else if (week== 1) {
+            week ='월';
+        }
+        else if (week== 2) {
+            week ='화';
+        }
+        else if (week== 3) {
+            week ='수';
+        }
+        else if (week== 4) {
+            week ='목';
+        }
+        else if (week== 5) {
+            week ='금';
+        }
+        else {
+            week ='토';
+        }
+        document.write(week, '<br>');
+        // document.write(d.getUTCDay(),'<br>');
+        // 시(hh)
+    
+        let hour = d.getHours();
+
+        if (hour >= 13 && hour <24){
+            hour -= 12
+            document.write(hour+'pm','<br>') 
+        }
+        else if(hour == 24) {
+            hour -= 12
+            document.write(hour+'am','<br>')
+        }
+        else if(hour == 12) {
+            
+            document.write(hour+'pm','<br>')
+        }
+        else {
+            document.write(hour+'am','<br>')
+        }
+        // 분(mm)
+        let mm =d.getMinutes();
+        if (mm < 10){
+            mm= '0'+ mm;
+        }
+        document.write(mm, '<br>');
+        // 초(ss)
+        // 01 ~ 09 ~10 ~60
+        let ss = d.getSeconds();
+        if (ss < 10){
+            ss = '0'+ss;
+        }
+        document.write(ss, '<br>');
+
+        var d2 = new Date(2020, 0, 20);
+        console.log(d2);
+
 
 
     </script>

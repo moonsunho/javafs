@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS</title>
+</head>
+
+<body>
+    <h1>브라우저와 운영체제 정보</h1>
+
+    <script>
+      /* 
+        location.href='url';
+
+      */
+        var info = navigator.userAgent.toLowerCase();
+       
+
+        if (info.indexOf('windows') >= 0) {
+            location.href ='https://naver.com';
+        } else if (info.indexOf('macintoch') >= 0) {
+            location.href ='https://naver.com';
+        } else if (info.indexOf('iphone') >= 0 ) {
+            location.href ='https://m.naver.com';
+        } else if (info.indexOf('android') >= 0) {
+            location.href ='https://m.naver.com';
+        }
+
+     
+
+       
+
+    </script>
+</body>
+
+</html>

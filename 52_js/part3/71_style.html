@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+    <style>
+        div {
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+        }
+        .box1 {
+            background: blue;
+        }
+        .box2 {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        /* 
+            객체.style.속성 = 값;
+        */
+
+        // 빨간색 박스의 가로/세로 크기를 모두 300px로 지정하시오.
+        
+        // const b1 = document.querySelectorAll('.box1');
+        // const b2 = document.querySelector('.box2');
+
+        // b2.style.width ='300px'
+        // b2.style.height ='300px'
+
+        const jqb2 = $('.box2');
+        jqb2.css({width :'300px'});
+        jqb2.css({height :'300px'});
+
+    </script>
+</body>
+
+</html>

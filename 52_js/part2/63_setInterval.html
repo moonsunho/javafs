@@ -17,7 +17,7 @@
     <button id="btn4">감소 정지</button>
     <script>
         /* 
-            setInterval(): 일정한 시간 간격으로 코드를 반복 실행
+            setInterval(코드,시간): 일정한 시간 간격으로 코드를 반복 실행
             clearInterval(): setInterval() 메서드 제거
 
             let 변수 = setInterval(function(){
@@ -48,31 +48,41 @@
             };
           */
         // 처리
-        btn1.onclick = function () {
-            clearInterval(auto1)
+        let auto1, auto2;
+
+        btn1.onclick = function(){
+            auto1 = setInterval(add, 1000);
         }
-        btn1.onclick = function () {
-            clearInterval(auto1)
+
+        btn2.onclick = function () {
+            clearInterval(auto1);
         }
+
         btn3.onclick = play;
+
         btn4.onclick = stop;
 
 
 
         function play() {
-            auto2 = setInterval(sub,1000);
+            auto2 = setInterval(sub, 1000);
         }
 
         function stop() {
             clearInterval(auto2)
         }
-        
+
         // add함수의 괄호()는 쓰지 않는다.
         // 1초마다 add함수 호출
-        setInterval(add, 1000);
+       
         function add() {
             increase++;
             console.log(increase);
+        }
+       
+        function sub() {
+            decrease--;
+            console.log(decrease);
         }
 
     </script>
