@@ -26,6 +26,20 @@
     </div>
 
     <script>
+        const box = document.querySelector('div');
+        const txt = box.children[0];
+
+        box.onwheel = function(e){
+            if (e.deltaY > 0){
+                this.style.background = ('red');
+                txt.innerText=('휠을 올렸습니다.')
+            }
+            else{
+                this.style.background = ('blue');
+                txt.innerText=('휠을 내렸습니다');
+            }
+        }
+
 
     </script>
 </body>

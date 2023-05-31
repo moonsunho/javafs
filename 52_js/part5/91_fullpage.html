@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fullPage</title>
+    <style>
+        body{margin: 0;}
+        #fullpage div{height: 100vh;}
+        #section1 {background: pink;}
+        #section2 {background: red;}
+        #section3 {background: yellowgreen;}
+        #section4 {background: lime;}
+    </style>
+</head>
+<body>
+    <div id="fullpage">
+        <div id="section1" class="section">섹션1</div>
+        <div id="section2" class="section">섹션2</div>
+        <div id="section3" class="section">섹션3</div>
+        <div id="section4" class="section">섹션4</div>
+    </div>
+    <script>
+        const divTag = document.querySelector('div');
+        const pTag = document.querySelector('p');
+
+        divTag.onwheel = function(e){
+            if (e.deltaY > 0) {
+                this.style.backgroundColor = 'red';
+                pTag.innerText = '마우스 휠을 올렸습니다.';
+            } else {
+                this.style.backgroundColor = 'blue';
+                pTag.innerText = '마우스 휠을 내렸습니다.';
+            }
+        };
+    </script>
+</body>
+</html>
