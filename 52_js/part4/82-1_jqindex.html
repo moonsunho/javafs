@@ -21,6 +21,8 @@
         <li>목록4</li>
     </ul>
     <p>여기에 색인번호</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script>
         /* 
             index ~ 요소의 순서 값을 반환
@@ -32,13 +34,12 @@
         /* 
             목록을 클릭하면 목록의 색인번호를 아래 표시하시오.
 
-            메서드: forEach(함수)
-            속성: index
+            메서드: index()
         */
-        const liTag = document.querySelectorAll('li');
-        const pTag = document.querySelector('p');
-
-        liTag.forEach((obj, idx) => obj.onclick = () => pTag.innerText = idx);
+        $('li').click(function(){
+            let idx = $(this).index();
+            $('p').text(idx); 
+        });
 
     </script>
 </body>
