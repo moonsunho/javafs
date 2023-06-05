@@ -29,26 +29,28 @@
 </head>
 
 <body>
-    <button>클래스 추가</button>
-    <button>클래스 제거</button>
+    <button class="btn1">클래스 추가</button>
+    <button class="btn2">클래스 제거</button>
     <div></div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script>
         /* 
-            요소.classList.add('클래스') ~ 요소의 클래스 추가
-            요소.classList.remove('클래스') ~ 요소의 클래스 제거
+            $('선택자').addClass('클래스1 클래스2 ..., 콜백함수') ~ 요소의 클래스 추가
+            $('선택자')removeClass('클래스1 클래스2') ~ 요소의 클래스 제거
         */
 
-        const btn0 = document.querySelectorAll('button')[0];
-        const btn1 = document.querySelectorAll('button')[1];
-        const divT = document.querySelector('div');
+        const btn0 = $('.btn1');
+        const btn1 = $('.btn2');
+        const divT = $('div');
 
-        btn0.onclick = function(){
-            divT.classList.add('on', 'active');
-        };
-        btn1.onclick = function(){
-            divT.classList.remove('on','active');
-        };
+        btn0.click(function(){
+            divT.addClass('on active');
+        });
+       
+        btn1.click(function(){
+            divT.removeClass('on active');
+        });
 
     </script>
 </body>
