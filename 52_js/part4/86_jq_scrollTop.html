@@ -23,6 +23,7 @@
 <body>
     <p></p>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script>
         /* 
             document.documentElement ~ <html> 요소 반환
@@ -34,15 +35,15 @@
             p 요소에 스크롤양을 표시하시오.
             
             이벤트: scroll
-            속성: scrollTop
-            객체: window, document.documentElement
+            메서드: scroll(), scrollTop(), text()
+            객체: $(window), $(this)
         */
-        const num = document.querySelector('p');
+        const num = $('p');
 
-        window.onscroll = function () {
-            let st = document.documentElement.scrollTop;
-            num.innerText = st;
-        };
+        $(window).scroll(function () {
+            let st = $(this).scrollTop();
+            num.text(st);
+        });
     </script>
 </body>
 

@@ -30,6 +30,7 @@
         </video>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script>
         /* 
             비디오요소.load() ~ 비디오 불러오기
@@ -45,17 +46,17 @@
             비디오 영상이 일시정지되게 하시오.
 
             이벤트: click
-            메서드: load(), play(), pause()
+            메서드: load(), play(), pause(), get()
        */
 
-        const loadBtn = document.querySelector('.load')
-        const playBtn = document.querySelector('.play')
-        const pauseBtn = document.querySelector('.pause')
-        const vid = document.querySelector('video')
+        const loadBtn = $('.load');
+        const playBtn = $('.play');
+        const pauseBtn = $('.pause');
+        const vid = $('video').get(0);
 
-        loadBtn.onclick = videoStop;
-        playBtn.onclick = videoPlay;
-        pauseBtn.onclick = videoPause;
+        loadBtn.click(videoStop);
+        playBtn.click(videoPlay);
+        pauseBtn.click(videoPause);
 
         // 비디오가 처음 상태로
         function videoStop() {
