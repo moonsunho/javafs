@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+    <style>
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            vertical-align: top;
+            width: 100%;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 슬라이드 */
+        #slideWrap {
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            position: relative;
+        }
+
+        .slider.on {
+            transition: .3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="slideWrap">
+        <div class="frame">
+            <ul class="slider">
+                <li><img src="images/slide1.png" alt="이미지1"></li>
+                <li><img src="images/slide2.png" alt="이미지2"></li>
+                <li><img src="images/slide3.png" alt="이미지3"></li>
+                <li><img src="images/slide4.png" alt="이미지4"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        const slider = $('.slider'),
+            sliderItem = $('.slider').find('li'),
+            sliderItemWidth = 100,
+            sliderItemCount = sliderItem.length + 2;
+        let num = 1;
+
+        // 요소의 가로 크기
+        /* 
+            탬플릿 리터럴(Template Literal): 백틱
+            형식: '문자열${변수}문자열' > 문자열은 변수와 구분되어 그대로 표시
+            형식: '문자열${변수 * 변수}문자열' > 중괄호 안에서 연산도 가능 
+        */
+        slider.width(`${sliderItemWidth * sliderItemCount}%`);
+        sliderItem.width(`${sliderItemWidth}%`);
+        // 슬라이드의 처음 위치
+        slider.css({ left: `${-1 * sliderItemWidth}%` });
+
+        // 처음과 마지막 이미지 복제
+        /* 
+            before<p>prepend나는 문단이다append</p>after
+            A.append(b) ~ A에 b를 내용 뒤에 삽입
+            A.prepend(b) ~ A에 b를 내용 앞에 삽입
+            A.after(b) ~ A에 b를 태그 이후 삽입
+            A.before(b) ~ A에 b를 태그 이전 삽입
+
+            b.appendTo(A) ~ A에 b를 내용 뒤에 삽입
+            b.prependTo(A) ~ A에 b를 내용 앞에 삽입
+        */
+        const sliderFirstItem = slider.find('li:first-of-type');
+        const sliderLastItem = slider.find('li:last-of-type');
+        // slider에 마지막 번째 li를 복제하여 slider 앞에 붙인다.
+        sliderLastItem.clone().prependTo(slider);
+        // slider에 첫 번째 li를 복제하여 slider 뒤에 붙인다.
+        sliderFirstItem.clone().appendTo(slider);
+
+
+        function slide() {
+            num++;
+            slider.addClass('on');
+            if (num > sliderItem.length) {
+                num = 1;
+                slider.removeClass('on');
+                moveSlide(num - 1);
+            }
+
+            setTimeout(function () {
+                slider.addClass('on');
+                moveSlide(num);
+            }, 100);
+        }
+
+        function moveSlide(cnt) {
+            let posX = cnt * sliderItemWidth * -1;
+            slider.css({ left: posX + '%' });
+            return false;
+
+        }
+
+        // 자동 슬라이드
+        let timer = setInterval(autoSlide, 2000);
+
+        function autoSlide() {
+            slide('nextBtn');
+        }
+
+    </script>
+</body>
+
+</html>
