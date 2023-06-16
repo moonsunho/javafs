@@ -1,6 +1,12 @@
 // 문서가 준비되면 함수 실행
 $(function () {
 
+    
+
+    
+    // 헤더
+    const headerBg = $('#header');
+
     // 내비게이션바
     $('.main > li > a').mouseenter(function (e) {
         // a태그 기본 이벤트 제거
@@ -107,10 +113,12 @@ $(function () {
             btn.css({ opacity: 1 });
             txt1.css({ left: 360 + 'px' });
             txt2.css({ left: 360 + 'px' });
+            headerBg.css({background: '#fdd000'});
         } else {
             btn.css({ opacity: 0 });
             txt1.css({ left: -800 + 'px' });
             txt2.css({ left: -400 + 'px' });
+            headerBg.css({background: 'transparent'})
         }
     });
 
@@ -168,6 +176,34 @@ $(function () {
         // cnt: 0, 1, 2
         inner.eq(idx).find('li').eq(cnt).fadeIn(1000).siblings().fadeOut(1000);
     }
+
+    // 패밀리 사이트
+    const fs = $('.fs'),
+        fsBtn = fs.find('.fsbtn'),
+        fsLst = fs.find('ul'),
+        fsIcon = $('.fs i'),
+        fsTxt = $('.fs span');
+
+    $(function () {
+        let state = 0;
+        fsBtn.click(function (e) {
+            e.preventDefault();
+            fsLst.slideToggle();
+            if (state == 0) {
+                fsTxt.text('관련 사이트 닫기');
+                fsIcon.attr({ class: 'fa-solid fa-minus' });
+                state = 1;
+            } else {
+                fsTxt.text('관련 사이트 열기');
+                fsIcon.attr({ class: 'fa-solid fa-plus' });
+                state = 0;
+            }
+        });
+    });
+
+
+
+
 
     // 풀페이지 레이아웃
     $('html').stop().animate({ scrollTop: 0 });
