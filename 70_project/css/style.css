@@ -39,19 +39,19 @@ header i {
 }
 
 /* 요소를 부모 정가운데 배치 */
-.logo {
+.clock {
     position: absolute;
     left: 50%;
     top: 50%;
     padding: 8px 24px;
     background: #000;
+    color: #fff;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* section2~4 common */
 .container {
-    width: 960px;
-    margin: 0 auto;
     padding-bottom: 81px;
 }
 
@@ -79,34 +79,19 @@ section h2+p {
 }
 
 /* section2 */
-.profile {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .profile p {
     text-align: justify;
     word-break: break-all;
 }
 
 .profile p:first-of-type {
-    flex: 100%;
     margin-bottom: 54px;
 }
 
 .profile div {
-    flex: 0 0 48%;
     text-align: center;
 }
 
-.profile p:last-of-type {
-    flex: 0 0 48%;
-}
-
-.photo {
-    width: 425px;
-}
 
 .photo img {
     margin-top: 54px;
@@ -122,40 +107,26 @@ section h2+p {
     text-align: center;
 }
 
-/* section2 - progress */
-.progress .lst>span {
-    display: inline-block;
-    margin: 16px;
+#skill .progress {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #ddd;
+    margin-bottom: 16px;
 }
 
-.progress .lst div {
-    background: #eee;
-}
-
-
-.progress .lst div span {
-    display: block;
-    height: 34px;
+#skill .progress div {
+    width: 0%;
+    background-color: #04AA6D;
     text-align: center;
-    background: #555;
+    color: white;
 }
 
-.progress .lst:nth-of-type(1) div span {
-    width: 90%;
-}
-
-.progress .lst:nth-of-type(2) div span {
-    width: 85%;
-}
-
-.progress .lst:nth-of-type(3) div span {
-    width: 75%;
-}
-
-
+/* counter */
 #counter ul {
+    padding: 36px 0;
     align-items: center;
-    height: 132px;
+    /* height: 132px; */
     background: #616161;
     color: #fff;
     text-align: center;
@@ -171,24 +142,14 @@ section h2+p {
     background-image: url(../images/parallax2.jpg);
 }
 
-#portfolio ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+#portfolio li {
+    margin-bottom: 12px;
+    overflow: hidden;
 }
 
-/* 
-    max-width : 960px
-    column count : 12
-    1 column width : 69px
-    gutter : 12px
- */
-#portfolio li {
-    width: 231px;
-    height: 162px;
-    margin-bottom: 12px;
+#portfolio li img {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+
 }
 
 #portfolio .moreBtn {
@@ -208,12 +169,8 @@ section h2+p {
     background-image: url(../images/parallax3.jpg);
 }
 
-#contact .container {
-    display: flex;
-}
 
 #map {
-    flex: 0 0 330px;
     height: 160px;
     margin-right: 30px;
     border-radius: 5px;
@@ -228,23 +185,16 @@ section h2+p {
     margin: 16px 0;
 }
 
-#contact form {
-    text-align: right;
-}
-
+/* form */
 #contact [name] {
-    width: 292px;
     height: 44px;
     padding-left: 8px;
 }
 
-[name="user_name"] {
-    margin-right: 11px;
-}
+
 
 
 #contact [name="user_message"] {
-    width: 600px;
     margin: 16px 0;
 }
 
