@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        .tabs{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            margin: 100px auto 0;
+        }
+
+
+        .tabs input,
+        .tabs>div {
+            display: none;
+        }
+
+        #btn1:checked~#tab1,
+        #btn2:checked~#tab2,
+        #btn3:checked~#tab3 {
+            display: block;
+        }
+        .tabs label {
+            display: inline-block;
+            background: #ccc;
+            color: #fff;
+            padding: 4px 16px;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        #btn1:checked+label,
+        #btn2:checked+label,
+        #btn3:checked+label {
+            background: #111;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <input type="radio" name="tabs" id="btn1" checked>
+        <label for="btn1">탭 메뉴1</label>
+        <input type="radio" name="tabs" id="btn2">
+        <label for="btn2">탭 메뉴2</label>
+        <input type="radio" name="tabs" id="btn3">
+        <label for="btn3">탭 메뉴3</label>
+        <div id="tab1">
+            <ul>
+                <li>첫 번째 탭메뉴 </li>
+                <li>첫 번째 탭메뉴 </li>
+                <li>첫 번째 탭메뉴 </li>
+                <li>첫 번째 탭메뉴 </li>
+                <li>첫 번째 탭메뉴 </li>
+            </ul>
+        </div>
+        <div id="tab2">
+            <ul>
+                <li>두 번째 탭메뉴 </li>
+                <li>두 번째 탭메뉴 </li>
+                <li>두 번째 탭메뉴 </li>
+                <li>두 번째 탭메뉴 </li>
+                <li>두 번째 탭메뉴 </li>
+            </ul>
+        </div>
+        <div id="tab3">
+            <ul>
+                <li>세 번째 탭메뉴 </li>
+                <li>세 번째 탭메뉴 </li>
+                <li>세 번째 탭메뉴 </li>
+                <li>세 번째 탭메뉴 </li>
+                <li>세 번째 탭메뉴 </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

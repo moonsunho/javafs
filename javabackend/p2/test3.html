@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .gnb{
+        position: absolute;
+        border: 1px solid #000;
+        width: 400px;
+        height: 400px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .main>li {
+        position: relative;
+        width: 200px;
+        background: #ccc;
+        text-align: center;
+    }
+    .main>li:hover{
+        background: #eee;
+    }
+
+    .main>li:hover .sub{
+        display: block;
+    }
+    .sub{
+        background: aqua;
+        display: none;
+        width: 160px;
+        position: absolute;
+        left: 200px;
+        top: 0;
+    }
+    .sub>li:hover{
+        background: rgb(0, 162, 255);
+    }
+</style>
+
+<body>
+    <div class="gnb">
+        <ul class="main">
+            <li>
+                <a href="#">회사소개</a>
+                <ul class="sub">
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">제품소개</a>
+                <ul class="sub">
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">커뮤니티</a>
+                <ul class="sub">
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">다운로드</a>
+                <ul class="sub">
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
