@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #slideWrap {
+            position: relative;
+            height: 100vh;
+        }
+
+        #slideWrap .slider li {
+            height: 100vh;
+            padding: 150px 0;
+            text-align: center;
+            background: no-repeat 50% 50%;
+        }
+
+        #slideWrap .slider li div {
+            position: absolute;
+            border: 1px solid black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 40%;
+            height: 30%;
+            /* opacity: 0; */
+            font-size: 3rem;
+            line-height: 2.4;
+        }
+        #slideWrap .slider li div span{
+            font-size: 1.6rem;
+        }
+
+
+        #slideWrap .slider .bg1 {
+            background-color: #98EEFF;
+            background-image: url(images/main_visual.jpg);
+        }
+
+        #slideWrap .slider .bg2 {
+            background-color: #FFD6B5;
+            background-image: url(images/main_visual2.jpg);
+        }
+
+        #slideWrap .slider .bg3 {
+            background-color: #79F7DA;
+            background-image: url(images/main_visual3.jpg);
+        }
+
+
+        #slideWrap .btn {
+            position: absolute;
+            z-index: 999;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 50px;
+        }
+
+        #slideWrap .btn a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%);
+            font-size: 5rem;
+            color: #95B0B6;
+            transition: color .3s;
+        }
+
+
+        #slideWrap #prev {
+            left: 10%;
+        }
+
+        #slideWrap #next {
+            left: 90%;
+        }
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script>
+         $(function () {
+            const slider = $('.slider').bxSlider({
+                mode: 'horizontal',
+                auto: true,
+                stopAutoOnClick: true,
+                pager: false,
+                controls: false,
+                speed: 400,
+                pause: 3000
+            });
+
+            $('#slideWrap #prev').click(function (e) {
+                e.preventDefault();
+                slider.goToPrevSlide();
+                autoPager();
+                return false;
+            });
+            $('#slideWrap #next').click(function (e) {
+                e.preventDefault();
+                slider.goToNextSlide();
+                autoPager();
+                return false;
+            });
+        });
+
+    </script>
+</head>
+<body>
+        <div id="slideWrap">
+            <ul class="slider">
+                <li class="bg1">
+                    <div><span>언택트 시대 필수 과정</span><br>
+                        비대면 상담<br>
+                        비대면 검사<br>
+                        <span>이제 당신의 공간에서 전문상담사를 만나보세요.</span>
+                    </div>
+                </li>
+                <li class="bg2">
+                    <div><span>가격 부담 Down x 치료기대효과 Up</span><br>
+                        다소니 관계 테라피<br>
+                    <span>검사와 상담 모두 필요한 여러분에게 딱!</span></div>
+                </li>
+                <li class="bg3">
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                </li>
+            </ul>
+            <div class="btn">
+                <a href="#" id="prev"><img src="images/main_prev.png"></img></a>
+                <a href="#" id="next"><img src="images/main_next.png"></img></a>
+            </div>
+        </div>
+</body>
+</html>

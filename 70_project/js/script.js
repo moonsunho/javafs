@@ -3,7 +3,7 @@ $(function () {
     let state = 0;
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() >= 2150) {
+        if ($(this).scrollTop() >= 1800) {
             if (state === 0) {
                 pgbar(0, 95);
                 pgbar(1, 85);
