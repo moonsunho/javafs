@@ -124,9 +124,9 @@ nav .main>li>a {
     color: #000;
 }
 
-nav .main>li:nth-of-type(6) a,
-nav .main>li:nth-of-type(7) a,
-nav .main>li:nth-of-type(8) a {
+nav .main>li:nth-of-type(6)>a,
+nav .main>li:nth-of-type(7)>a,
+nav .main>li:nth-of-type(8)>a {
     color: #0697e1;
 }
 
