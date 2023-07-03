@@ -1,3 +1,5 @@
+package a0703;
+
 public class Ex6_2 {
     public static void main(String[] args) {
         Tv t1 = new Tv();
