@@ -1,3 +1,5 @@
+package a0703;
+
 public class String1 {
     public static void main(String[] args) {
         String str = new String("Java");

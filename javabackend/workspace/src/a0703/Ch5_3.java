@@ -1,3 +1,5 @@
+package a0703;
+
 public class Ch5_3 {
     public static void main(String[] args) {
         int[] arr1;

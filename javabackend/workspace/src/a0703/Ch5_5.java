@@ -1,3 +1,5 @@
+package a0703;
+
 public class Ch5_5 {
     public static void main(String[] args) {
         String strVar1 = "홍길동";

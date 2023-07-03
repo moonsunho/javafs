@@ -44,10 +44,10 @@ public class ArrayList1 {
         System.out.println();
 
         // set() 메소드를 이용한 요소의 변경
-        arrList.set(0,20); // 0번 index에 값 20을 대입
+        arrList.set(0, 20); // 0번 index에 값 20을 대입
 
-        for (int e : arrList){
-            System.out.println(e+" ");
+        for (int e : arrList) {
+            System.out.println(e + " ");
         }
         System.out.println();
 

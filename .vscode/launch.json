@@ -1,0 +1,637 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Hw1",
+            "request": "launch",
+            "mainClass": "a0703.Hw1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "a0626.App",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Char1",
+            "request": "launch",
+            "mainClass": "a0626.Char1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Datatype1",
+            "request": "launch",
+            "mainClass": "a0626.Datatype1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Num1",
+            "request": "launch",
+            "mainClass": "a0626.Num1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Num2",
+            "request": "launch",
+            "mainClass": "a0626.Num2",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Prog",
+            "request": "launch",
+            "mainClass": "a0626.Prog",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Prog1",
+            "request": "launch",
+            "mainClass": "a0626.Prog1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "String1",
+            "request": "launch",
+            "mainClass": "a0626.String1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "String2",
+            "request": "launch",
+            "mainClass": "a0626.String2",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Substring1",
+            "request": "launch",
+            "mainClass": "a0626.Substring1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Binary",
+            "request": "launch",
+            "mainClass": "a0627.Binary",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "BitEx1",
+            "request": "launch",
+            "mainClass": "a0627.BitEx1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Char1(1)",
+            "request": "launch",
+            "mainClass": "a0627.Char1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Char2",
+            "request": "launch",
+            "mainClass": "a0627.Char2",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Double1",
+            "request": "launch",
+            "mainClass": "a0627.Double1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Final1",
+            "request": "launch",
+            "mainClass": "a0627.Final1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Opex01",
+            "request": "launch",
+            "mainClass": "a0627.Opex01",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Plus1",
+            "request": "launch",
+            "mainClass": "a0627.Plus1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Plus2",
+            "request": "launch",
+            "mainClass": "a0627.Plus2",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "This1",
+            "request": "launch",
+            "mainClass": "a0627.This1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "This2",
+            "request": "launch",
+            "mainClass": "a0627.This2",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "This3",
+            "request": "launch",
+            "mainClass": "a0627.This3",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "This4",
+            "request": "launch",
+            "mainClass": "a0627.This4",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "This5",
+            "request": "launch",
+            "mainClass": "a0627.This5",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "This6",
+            "request": "launch",
+            "mainClass": "a0627.This6",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "This7",
+            "request": "launch",
+            "mainClass": "a0627.This7",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_10",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_10",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_11",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_11",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_12",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_12",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_13",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_13",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_14",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_14",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_15",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_15",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_16",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_16",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_17",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_17",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_6",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_6",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex3_9",
+            "request": "launch",
+            "mainClass": "a0628.Ex3_9",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_1",
+            "request": "launch",
+            "mainClass": "a0628.Ex4_1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_3",
+            "request": "launch",
+            "mainClass": "a0628.Ex4_3",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_4",
+            "request": "launch",
+            "mainClass": "a0628.Ex4_4",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_5",
+            "request": "launch",
+            "mainClass": "a0628.Ex4_5",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Hw1",
+            "request": "launch",
+            "mainClass": "a0628.Hw1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_10",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_10",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_11",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_11",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_12",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_12",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_13",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_13",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_14",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_14",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_15",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_15",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_6",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_6",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_6_1",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_6_1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_6_2",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_6_2",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_6_3",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_6_3",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_7",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_7",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex4_8",
+            "request": "launch",
+            "mainClass": "a0629.Ex4_8",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "This1(1)",
+            "request": "launch",
+            "mainClass": "a0629.This1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "This2(1)",
+            "request": "launch",
+            "mainClass": "a0629.This2",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "This3(1)",
+            "request": "launch",
+            "mainClass": "a0629.This3",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "W1",
+            "request": "launch",
+            "mainClass": "a0629.W1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "W2",
+            "request": "launch",
+            "mainClass": "a0629.W2",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "W3",
+            "request": "launch",
+            "mainClass": "a0629.W3",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "W4",
+            "request": "launch",
+            "mainClass": "a0629.W4",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "E4_2",
+            "request": "launch",
+            "mainClass": "a0630.E4_2",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "E4_3",
+            "request": "launch",
+            "mainClass": "a0630.E4_3",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "E4_4",
+            "request": "launch",
+            "mainClass": "a0630.E4_4",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "E4_5",
+            "request": "launch",
+            "mainClass": "a0630.E4_5",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_1",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_2",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_2",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_3",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_3",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_4",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_4",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_5",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_5",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_6",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_6",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_7",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_7",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_8",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_8",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex5_9",
+            "request": "launch",
+            "mainClass": "a0630.Ex5_9",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Hw1(1)",
+            "request": "launch",
+            "mainClass": "a0630.Hw1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "ArrayList1",
+            "request": "launch",
+            "mainClass": "a0703.ArrayList1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Car1",
+            "request": "launch",
+            "mainClass": "a0703.Car1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ch5_3",
+            "request": "launch",
+            "mainClass": "a0703.Ch5_3",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ch5_5",
+            "request": "launch",
+            "mainClass": "a0703.Ch5_5",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ch5_6",
+            "request": "launch",
+            "mainClass": "a0703.Ch5_6",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ch5_7",
+            "request": "launch",
+            "mainClass": "a0703.Ch5_7",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex6_1",
+            "request": "launch",
+            "mainClass": "a0703.Ex6_1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex6_3",
+            "request": "launch",
+            "mainClass": "a0703.Ex6_3",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "String1(1)",
+            "request": "launch",
+            "mainClass": "a0703.String1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "SubString",
+            "request": "launch",
+            "mainClass": "a0703.SubString",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "This5_7",
+            "request": "launch",
+            "mainClass": "a0703.This5_7",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "This5_8",
+            "request": "launch",
+            "mainClass": "a0703.This5_8",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "This5_9",
+            "request": "launch",
+            "mainClass": "a0703.This5_9",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "array1",
+            "request": "launch",
+            "mainClass": "a0703.array1",
+            "projectName": "javafs_e4986811"
+        }
+    ]
+}

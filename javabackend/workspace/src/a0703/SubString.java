@@ -1,3 +1,5 @@
+package a0703;
+
 public class SubString {
     public static void main(String[] args) {
         String ssn = "880815-1234567";

@@ -1,3 +1,5 @@
+package a0703;
+
 public class Ex6_1 {
     public static void main(String[] args) {
         Tv t; // Tv 인스턴스를 참조하기 위한 변수 t를 선언
