@@ -1,3 +1,5 @@
+package a0626;
+
 public class Prog1 {
     public static void main(String[] args) {
         // print() 메소드는 줄바꿈 x
