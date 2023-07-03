@@ -1,3 +1,5 @@
+package a0630;
+
 public class E4_4 {
     public static void main(String[] args) {
         int sum = 0; // 총합을 구하는 변수

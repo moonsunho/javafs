@@ -1,3 +1,5 @@
+package a0630;
+
 public class Ex5_6 {
     public static void main(String[] args) {
         String[] names = {"Kim","Park","YI"};

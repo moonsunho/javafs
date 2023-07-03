@@ -1,3 +1,5 @@
+package a0630;
+
 public class Ex5_2 {
     public static void main(String[] args) {
         int sum = 0; // 총점을 저장할 변수

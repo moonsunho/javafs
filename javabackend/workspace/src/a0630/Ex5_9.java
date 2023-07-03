@@ -1,3 +1,5 @@
+package a0630;
+
 public class Ex5_9 {
     public static void main(String[] args) {
         int[] arr = {10,20,30,40,50};

@@ -1,3 +1,4 @@
+package a0630;
 public class E4_3 {
     public static void main(String[] args) {
         int sum = 0;

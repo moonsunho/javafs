@@ -1,3 +1,5 @@
+package a0630;
+
 import java.util.Arrays;
 
 public class Ex5_4 {
