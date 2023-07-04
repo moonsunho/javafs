@@ -11,7 +11,7 @@ public class Prac10 {
             System.out.println("숫자 입력 >");
             num[i] = scan.nextInt();
         }
-        Arrays.sort(num);
+        Arrays.sort(num); // 오름차순 정렬
         int min = num[0];
         System.out.println(min);
     }
