@@ -6,6 +6,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Prac2",
+            "request": "launch",
+            "mainClass": "a0705.Prac2",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Prac1",
+            "request": "launch",
+            "mainClass": "a0705.Prac1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "WeekEx",
+            "request": "launch",
+            "mainClass": "a0705.WeekEx",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Enum",
+            "request": "launch",
+            "mainClass": "a0705.Enum",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "MonsterTest",
+            "request": "launch",
+            "mainClass": "a0705.MonsterTest",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "AccountTest1",
+            "request": "launch",
+            "mainClass": "a0705.AccountTest1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "FoodTest",
+            "request": "launch",
+            "mainClass": "a0705.FoodTest",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "StudentTest",
+            "request": "launch",
+            "mainClass": "a0705.StudentTest",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "AvengerTest",
+            "request": "launch",
+            "mainClass": "a0705.AvengerTest",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "HeroTest",
+            "request": "launch",
+            "mainClass": "a0705.HeroTest",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Dog",
+            "request": "launch",
+            "mainClass": "a0705.Dog",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
             "name": "Prac10",
             "request": "launch",
             "mainClass": "a0704.Prac10",
