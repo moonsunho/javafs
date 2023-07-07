@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Prac3",
+            "request": "launch",
+            "mainClass": "a0707.Prac3",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Prac2",
+            "request": "launch",
+            "mainClass": "a0707.Prac2",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Prac1",
+            "request": "launch",
+            "mainClass": "a0707.Prac1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "InstanceofEx",
+            "request": "launch",
+            "mainClass": "a0707.InstanceofEx",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Main10",
+            "request": "launch",
+            "mainClass": "a0707.Main10",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Car33",
+            "request": "launch",
+            "mainClass": "a0707.Car33",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Carex",
+            "request": "launch",
+            "mainClass": "a0707.Carex",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
             "name": "Prac2",
             "request": "launch",
             "mainClass": "a0705.Prac2",
