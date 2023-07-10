@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "String4",
+            "request": "launch",
+            "mainClass": "a0710.String4",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
             "name": "Main1",
             "request": "launch",
             "mainClass": "a0710.Main1",
