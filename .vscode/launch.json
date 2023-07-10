@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main1",
+            "request": "launch",
+            "mainClass": "a0710.Main1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Sample123",
+            "request": "launch",
+            "mainClass": "test.Sample123",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Sample1",
+            "request": "launch",
+            "mainClass": "a0710.Sample1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
             "name": "Prac3",
             "request": "launch",
             "mainClass": "a0707.Prac3",
