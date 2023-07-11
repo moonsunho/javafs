@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PatternEx",
+            "request": "launch",
+            "mainClass": "a0711.PatternEx",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "DecimalFormatEx",
+            "request": "launch",
+            "mainClass": "a0711.DecimalFormatEx",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "RandomEx",
+            "request": "launch",
+            "mainClass": "a0711.RandomEx",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
             "name": "StringBuffer01",
             "request": "launch",
             "mainClass": "a0711.StringBuffer01",
