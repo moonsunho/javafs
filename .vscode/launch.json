@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Write04_1",
+            "request": "launch",
+            "mainClass": "a0711.Write04_1",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Write02",
+            "request": "launch",
+            "mainClass": "a0711.Write02",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Smaple02",
+            "request": "launch",
+            "mainClass": "a0711.Smaple02",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
             "name": "PatternEx",
             "request": "launch",
             "mainClass": "a0711.PatternEx",
