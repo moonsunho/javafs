@@ -34,6 +34,8 @@ CREATE TABLE drinks (
 );
 
 2. 데이터베이스 테이블의 구조
+DB안 모든 테이블 조회
+show tables;
 데이터베이스 테이블의 구조 보기
 desc 테이블명;
 

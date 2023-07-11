@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StringBuffer01",
+            "request": "launch",
+            "mainClass": "a0711.StringBuffer01",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "Ex6_2",
+            "request": "launch",
+            "mainClass": "a0703.Ex6_2",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
             "name": "String4",
             "request": "launch",
             "mainClass": "a0710.String4",
