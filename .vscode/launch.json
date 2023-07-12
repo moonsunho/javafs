@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MainClass",
+            "request": "launch",
+            "mainClass": "a0711.ArrayList.MainClass",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "ArrayListEx",
+            "request": "launch",
+            "mainClass": "a0712.ArrayListEx",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
+            "name": "GenericEx_02",
+            "request": "launch",
+            "mainClass": "a0712.GenericEx_02",
+            "projectName": "javafs_e4986811"
+        },
+        {
+            "type": "java",
             "name": "Write04_1",
             "request": "launch",
             "mainClass": "a0711.Write04_1",
